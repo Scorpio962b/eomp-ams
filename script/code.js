@@ -1,6 +1,6 @@
 //creating an object and a function that will load when windows load.
 
-let products = JSON.parse(localStorage.getItem("products")) || [
+  [
     {
   
       id: 1,
@@ -235,9 +235,9 @@ function showMenu() {
     if (showMenuItem) {
         document.getElementById('menuContainer').innerHTML = `<ul class="dropdown">
 
-    <li><a href="#breakfast">Breakfast</a></li>
-    <li><a href="#lunch">Lunch</a></li>
-    <li><a href="#dinner">Dinner</a></li>
+    <li><a href="//html/products.html/#breakfast">Breakfast</a></li>
+    <li><a href="//html/products.html/#lunch">Lunch</a></li>
+    <li><a href="//html/products.html/#dinner">Dinner</a></li>
   </ul>`;
 
   } else {
@@ -299,5 +299,5 @@ function updateCart() {
     cartContainer.appendChild(cartItem);
   });
 }};
-
+check
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="../styles/admin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samaai's Moonlight Restaurant</title>
+    <style>
+      .mySlides {display:none;}
+      </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"><img src="https://i.postimg.cc/J40qGDsg/smr.jpg"></div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/ /index.html">Home</a></li>
+
+            <li><a href="./about.html">About</a></li>
+
+            <li><a href="./admin.html" >Admin</a></li>
+
+
+            <li class="mainmenu" id="menuMain" >
+              <a onclick="showMenu() ">Menu</a>
+
+              <!-- DROPDOWN MENU -->
+              <div id="menuContainer"></div>
+
+            </li>
+            <li>
+                <a href="#" id="myBtn"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            <li><a href="./contact.html">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+       <table> 
+            <tr>
+                <td>
+                    <form onsubmit="SubmitItem()">
+                          <div>
+                            <label for="productImage">Product Image</label>
+                            <input type="text" name="productImage" id="productImage">
+                          </div>
+                          <div>
+                            <label for="productName">Product Name</label>
+                            <input type="text" name="productName" id="productName">
+                          </div>
+                          <div>
+                            <label for="qty">Qty</label>
+                            <input type="number" name="ProductName" id="qty">
+                          </div>
+                          <div>
+                            <label for="productPrice">Product Price</label>
+                            <input type="number" name="productPrice" id="productPrice">
+                          </div>
+                          <div class="myFormBtn">
+                              <button type="submit">Submit</button>
+                              <button type="reset">Reset</button>
+                          </div>
+                    </form>
+                    <td>
+                        <table id="Lists">
+                            <thead>
+                                   <tr>
+                                       <th>Product Image</th>
+                                       <th>Product Name</th>
+                                       <th>Category</th>
+                                       <th>Product Price</th>
+                                   </tr>
+                            </thead> 
+                            <tbody id="value">
+
+                            </tbody>
+                        </table>
+                    </td>
+                </td>
+            </tr>
+       </table>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="find-us">
+          <h5>Address</h5>
+          <p>123 Moonlit Avenue
+             Cityville, State 12345
+             United States </p>
+          <h5>Contacts us</h5>
+          <p>email:smr@yahoo.com</p>
+          <p>tel: 021 827 2638</p>
+          &copy; samaai moonlight restaurant
+        </div>
+  
+          <div class="times">
+            <h6>Monday 06:00-22:00</h6>
+            <h6>Tuesday 06:00-22:00</h6>
+            <h6>Wednesday 06:00-22:00</h6>        
+            <h6>Thursday 06:00-22:00</h6>   
+            <h6>Friday 06:00-21:00</h6>   
+            <h6>Saturday 06:00-21:00</h6>
+            <h6>Sunday06:00-21:00</h6>
+          </div>
+  
+          <div class="social-icons">
+            <h5>follow us</h5>
+            <a href="https://twitter.com/"> <img src="https://i.postimg.cc/C1HbZ63J/icons8-twitter-circled-2.gif," alt="Twitter" /></a>
+            <a href="https://www.instagram.com/"><img src="https://i.postimg.cc/mkmMj12H/icons8-instagram-1.gif" alt="instagram" /></a>
+            <a href="https://za.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img src="https://i.postimg.cc/B6GxnGVX/icons8-linkedin-circled-1.gif" alt="linkedin" /></a>
+          </div>
+        </div>
+      </footer>
+      <script src="https://kit.fontawesome.com/850ca6a355.js" crossorigin="anonymous"></script>
+      <script src="/script/admin.js"></script>
+    </body>
+</html>

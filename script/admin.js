@@ -2,8 +2,8 @@ let products = JSON.parse(localStorage.getItem("products")) || [];
 
 function SubmitItem() {
     let product = {
-        imageUrl: "first one",
-        name: "",
+        imageUrl: "",
+        name: "product.name",
         catogary: "",
         price: ""
     }

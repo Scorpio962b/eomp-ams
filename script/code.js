@@ -299,5 +299,5 @@ function updateCart() {
     cartContainer.appendChild(cartItem);
   });
 }};
-
+let clearCart = document.getElementById("clearCart")
 
